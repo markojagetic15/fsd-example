@@ -1,4 +1,4 @@
-import { ListingType } from '../model'
+import { ListingType } from '../consts'
 
 export const getListingTitle = (listing: ListingType) => {
     return listing.title

@@ -1,4 +1,4 @@
-import { ListingType } from '../model'
+import { ListingType } from '../consts'
 import {
     getListingCity,
     getListingCountry,
@@ -6,7 +6,7 @@ import {
     getListingImages,
     getListingStreet,
     getListingTitle,
-} from '../lib'
+} from '../model'
 
 interface Props {
     listing: ListingType

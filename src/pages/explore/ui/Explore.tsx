@@ -1,5 +1,5 @@
 import { Listing } from '../../../entities/listing'
-import { listings } from '../../../listings.ts'
+import { listings } from '../../../listings'
 
 export const Explore = () => {
     return (
