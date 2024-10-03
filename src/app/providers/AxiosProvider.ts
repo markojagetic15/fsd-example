@@ -3,21 +3,21 @@ import Axios from 'axios'
 import AxiosInstance = Axios.AxiosInstance
 
 export type AxiosContextType = {
-    someAxios: AxiosInstance
+    axios: AxiosInstance
 }
 
-export const AxiosProvider = createContext<AxiosContextType>({
-    someAxios: Axios,
+export const AxiosContext = createContext<AxiosContextType>({
+    axios: Axios,
 })
 
-export const AxiosContext = ({
+export const AxiosProvider = ({
     children,
 }: React.PropsWithChildren<unknown>) => {
     return React.createElement(
-        AxiosProvider.Provider,
+        AxiosContext.Provider,
         {
             value: {
-                someAxios: Axios,
+                axios: Axios,
             },
         },
         children
